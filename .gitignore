@@ -1,0 +1,53 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml
+/julia/Manifest.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Results (large)
+results/raw/*.jld2
+results/raw/*.h5
+!results/raw/.gitkeep
+
+# Run logs (session artefacts)
+results/logs/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# LaTeX build artifacts (keep .tex/.bib/.pdf-figures, drop intermediates)
+papers/**/*.aux
+papers/**/*.log
+papers/**/*.out
+papers/**/*.bbl
+papers/**/*.blg
+papers/**/*.toc
+papers/**/*.synctex.gz
+papers/**/*.fdb_latexmk
+papers/**/*.fls
+papers/**/*.spl
+
+# Session artefacts (Claude Code working files)
+.claude_*
+.julia_*.log
+.matlab_*.log
+.envelope_*.log
+.contingency_*.log
+.bess_*.log
+.inertia_*.log
+.s6_*.log
+.venv_*.log
+*.aux
+*.synctex.gz
+*.fdb_latexmk
+*.fls

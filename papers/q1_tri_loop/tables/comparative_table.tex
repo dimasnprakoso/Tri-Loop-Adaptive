@@ -1,0 +1,40 @@
+\begin{table*}[t]
+\centering
+\caption{Comparative metrics — 5 control schemes evaluated across 5 disturbance scenarios. Bold C4 indicates proposed tri-loop adaptive scheme. Daggers ($\dagger$) mark threshold violations (RoCoF $>0.5$\,Hz/s, $|\Delta f| > 0.4$\,Hz, $t_s > 2$\,s, $P_\mathrm{p2p} > 1$\,kW).}
+\label{tab:comparative}
+\begin{tabular}{llrrrrr}
+\toprule
+Scenario & Metric & C0 no-VIC & C1 const-VIC & C2 fuzzy-VIC & C3 adapt-VIC & \textbf{C4 PROPOSED} \\
+\midrule
+  S1 normal & RoCoF (Hz/s) & 0.288 & 0.065 & 0.064 & 0.066 & 0.210 \\
+   & $|\Delta f|$ max (Hz) & 0.414$^\dagger$ & 0.021 & 0.021 & 0.021 & 0.059 \\
+   & settling (s) & 0.032 & 0.000 & 0.000 & 0.000 & 0.000 \\
+   & BESS thrpt (kWh) & 0.000 & 0.010 & 0.010 & 0.010 & 0.031 \\
+   & $P_\mathrm{inj}$ p2p (kW) & 0.000 & 5.802$^\dagger$ & 5.704$^\dagger$ & 5.670$^\dagger$ & 0.000 \\
+  \cmidrule(lr){1-7}
+  S2 cloud & RoCoF (Hz/s) & 1.328$^\dagger$ & 0.272 & 0.257 & 0.241 & 0.436 \\
+   & $|\Delta f|$ max (Hz) & 2.837$^\dagger$ & 0.211 & 0.182 & 0.167 & 0.270 \\
+   & settling (s) & n/a & 0.497 & 0.477 & 0.459 & 0.562 \\
+   & BESS thrpt (kWh) & 0.000 & 0.084 & 0.078 & 0.074 & 0.112 \\
+   & $P_\mathrm{inj}$ p2p (kW) & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 \\
+  \cmidrule(lr){1-7}
+  S3 freq-event & RoCoF (Hz/s) & 0.522$^\dagger$ & 0.077 & 0.076 & 0.076 & 0.350 \\
+   & $|\Delta f|$ max (Hz) & 0.511$^\dagger$ & 0.023 & 0.023 & 0.022 & 0.068 \\
+   & settling (s) & 0.670 & 0.000 & 0.000 & 0.000 & 0.031 \\
+   & BESS thrpt (kWh) & 0.000 & 0.015 & 0.015 & 0.015 & 0.043 \\
+   & $P_\mathrm{inj}$ p2p (kW) & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+  \cmidrule(lr){1-7}
+  S4 high-IBR & RoCoF (Hz/s) & 4.491$^\dagger$ & 0.126 & 0.135 & 0.125 & 0.520$^\dagger$ \\
+   & $|\Delta f|$ max (Hz) & 1.292$^\dagger$ & 0.024 & 0.023 & 0.023 & 0.072 \\
+   & settling (s) & n/a & 0.000 & 0.000 & 0.000 & 0.011 \\
+   & BESS thrpt (kWh) & 0.000 & 0.016 & 0.016 & 0.015 & 0.047 \\
+   & $P_\mathrm{inj}$ p2p (kW) & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+  \cmidrule(lr){1-7}
+  S5 weak-grid & RoCoF (Hz/s) & 0.786$^\dagger$ & 0.027 & 0.026 & 0.026 & 0.295 \\
+   & $|\Delta f|$ max (Hz) & 1.527$^\dagger$ & 0.006 & 0.006 & 0.006 & 0.070 \\
+   & settling (s) & 4.975$^\dagger$ & 0.000 & 0.000 & 0.000 & 0.048 \\
+   & BESS thrpt (kWh) & 0.000 & 0.003 & 0.003 & 0.003 & 0.010 \\
+   & $P_\mathrm{inj}$ p2p (kW) & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

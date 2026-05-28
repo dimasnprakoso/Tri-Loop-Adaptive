@@ -1,0 +1,55 @@
+%% Supplementary material to:
+%% Tri-Loop Adaptive Co-Design --- IEEE Trans. Sustainable Energy submission
+%% Compile separately from main.tex; upload alongside main.pdf at submission.
+
+\documentclass[journal]{IEEEtran}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+% Cross-reference resolution against the main paper.
+% Requires main.aux to be built first (i.e., compile main.tex before this).
+\usepackage{xr}
+\externaldocument{main}
+
+\begin{document}
+
+% Looser line-breaking for long monospace command lines in the appendix.
+\sloppy
+
+\title{Supplementary Material to:\\
+Tri-Loop Adaptive Co-Design of Virtual Inertia, Damping, and
+Battery Storage Coordination for High-Penetration PV--BESS Systems
+under Weak Tropical Grids}
+
+\author{Dimas~Nur~Prakoso,
+        Adi~Soeprijanto,~\IEEEmembership{Member,~IEEE,}
+        Dimas~Fajar~Uman~Putra,
+        Ananthyo~Whisnu~Wardhana,
+        and~Basuki~Winarno}
+
+\markboth{Supplementary Material --- IEEE Trans.\ Sustainable Energy}%
+{Prakoso \MakeLowercase{\textit{et al.}}: Tri-Loop Adaptive Co-Design for PV--BESS Systems}
+
+\maketitle
+
+\noindent This document is the supplementary material referenced in
+the main paper. It contains a cross-implementation verification of
+the averaged-model Julia pipeline against an independent MATLAB
+re-implementation, on scenarios S1 and S3. Section, equation, and
+figure numbers refer to the main paper unless prefixed by ``S''.
+
+\input{appendix_a_simulink}
+
+\end{document}

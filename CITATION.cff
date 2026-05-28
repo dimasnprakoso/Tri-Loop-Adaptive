@@ -1,0 +1,75 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper (preferred-citation, below)."
+type: software
+title: "PV-BESS-VIC: Simulation framework for tri-loop adaptive virtual-inertia control of grid-connected PV-BESS systems"
+abstract: >-
+  Open-source Julia + Python research platform accompanying the paper
+  "Tri-Loop Adaptive Co-Design of Virtual Inertia, Damping, and Battery
+  Storage Coordination for High-Penetration PV-BESS Systems under Weak
+  Tropical Grids" (IEEE Trans. Sustainable Energy, in review). Implements
+  five control schemes (no-VIC, constant-VIC, fuzzy-VIC, adaptive-VIC,
+  proposed tri-loop), six disturbance scenarios (load step, cloud passing,
+  generator loss, high-IBR penetration, weak grid, Madiun real-day),
+  1000-sample Monte-Carlo robustness sweep, and numerical small-signal
+  eigenvalue analysis. Includes 2025 NASA POWER MERRA-2 hourly irradiance
+  data for Madiun, Indonesia.
+authors:
+  - family-names: Prakoso
+    given-names: "Dimas Nur"
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia"
+    email: 7022251005@student.its.ac.id
+  - family-names: Soeprijanto
+    given-names: Adi
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia"
+    email: adisup@ee.its.ac.id
+  - family-names: Putra
+    given-names: "Dimas Fajar Uman"
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia"
+  - family-names: Wardhana
+    given-names: "Ananthyo Whisnu"
+    affiliation: "Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia"
+  - family-names: Winarno
+    given-names: Basuki
+    affiliation: "Politeknik Negeri Madiun, East Java, Indonesia"
+repository-code: "https://github.com/Power-Simulations/pemodelan-paper1"
+url: "https://github.com/Power-Simulations/pemodelan-paper1"
+license: MIT
+version: "1.0.0"
+date-released: "2026-05-28"
+keywords:
+  - virtual-inertia
+  - photovoltaic
+  - battery-energy-storage
+  - frequency-stability
+  - weak-grid
+  - tropical-power-systems
+  - julia
+  - monte-carlo
+  - small-signal-analysis
+  - limit-cycle
+preferred-citation:
+  type: article
+  title: "Tri-Loop Adaptive Co-Design of Virtual Inertia, Damping, and Battery Storage Coordination for High-Penetration PV-BESS Systems under Weak Tropical Grids"
+  authors:
+    - family-names: Prakoso
+      given-names: "Dimas Nur"
+    - family-names: Soeprijanto
+      given-names: Adi
+    - family-names: Putra
+      given-names: "Dimas Fajar Uman"
+    - family-names: Wardhana
+      given-names: "Ananthyo Whisnu"
+    - family-names: Winarno
+      given-names: Basuki
+  journal: "IEEE Transactions on Sustainable Energy"
+  year: 2026
+  status: "in-review"
+  notes: "Submitted to IEEE Transactions on Sustainable Energy. Preprint and DOI to be assigned upon acceptance."
+references:
+  - type: data
+    title: "NASA POWER MERRA-2 hourly meteorological data for Madiun, Indonesia (lat -7.629, lon 111.524), 2025"
+    authors:
+      - name: "NASA Langley Research Center, POWER Project"
+    year: 2024
+    url: "https://power.larc.nasa.gov"
+    notes: "Open data, accessed 2026-05-01."

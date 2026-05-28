@@ -1,0 +1,3 @@
+scenario,rmse_f_Hz,rmse_P_inj_W,rmse_V_dc_V,pass_f,pass_P_inj,pass_V_dc,verdict
+s1,1.5981872321424805e-06,0.0597824219471838,0.0,True,True,True,PASS
+s3,5.3411711728462965e-08,0.0007625505885339858,0.0,True,True,True,PASS

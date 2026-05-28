@@ -1,0 +1,5 @@
+scheme,peak_fund_Hz,peak_fund_amp_kW,peak_full_Hz,peak_full_amp_kW,p2p_steady_kW
+C1 const,45.565,0.7255,91.13,0.7784,5.801
+C2 fuzzy,52.421,0.9067,104.842,0.9622,5.703
+C3 adapt,59.42,0.9532,118.697,1.0305,5.669
+C4 PROPOSED,0.286,0.0002,0.286,0.0002,0.113

@@ -1,0 +1,13 @@
+# NASA POWER Madiun Dataset Manifest
+# Generated: 2026-05-04 10:00:49 UTC
+# Source: https://power.larc.nasa.gov/api/temporal/{daily,hourly}/point
+# Coordinates: lat=-7.629, lon=+111.524 (Madiun, East Java, Indonesia)
+# Period: 2025-01-01 to 2025-12-31 LST
+# Parameters: ALLSKY_SFC_SW_DWN, CLRSKY_SFC_SW_DWN, T2M, T2M_MAX, T2M_MIN, RH2M, WS10M, PRECTOTCORR
+# Format: NASA POWER native CSV with 14-line header + tabular body
+#
+# Use: this manifest pins the exact data version used in the paper.
+# To verify: sha256sum madiun_2025_*.csv | diff - <(grep -v "^#" MANIFEST.txt)
+#
+487fb3b8c30e4cd724b4ce824da89c9c6484de9ca8198e8df967c6976acb87b8  madiun_2025_daily.csv    # 21992 bytes, fetched 2026-05-02
+f79cb410b978092be18d71935225e44bbfb273e86e70ae71e1a4db2c3fc9ea3a  madiun_2025_hourly.csv    # 307300 bytes, fetched 2026-05-02
