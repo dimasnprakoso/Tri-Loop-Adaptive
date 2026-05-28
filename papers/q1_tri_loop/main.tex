@@ -64,7 +64,7 @@ smooth-saturating $H(\dot\omega)$ and $D(\Delta\omega)$, MPPT/VIC
 mixing weight $\alpha(\Delta\omega,\dot\omega)$, and SOC- and
 severity-aware BESS contribution share
 $\beta(\Delta\omega,\dot\omega,\mathrm{SOC})$. The scheme suppresses
-limit-cycle amplitude by $\sim$3 orders of magnitude while satisfying
+the FFT peak amplitude by $\sim$3 orders of magnitude while satisfying
 IEEE~1547-2018 Category~I thresholds (RoCoF $\leq 0.5$\,Hz/s,
 $|\Delta f|\leq 0.4$\,Hz) in 87\% of a 1\,000-sample Monte Carlo
 sweep over SCR, system inertia, disturbance magnitude, initial SOC,
@@ -695,7 +695,8 @@ $N=1\,000$ Monte~Carlo samples on scenario S3.}
 band). Primary thresholds follow IEEE~1547-2018 Cat.~I
 (RoCoF$\leq 0.5$\,Hz/s, $|\Delta f|\leq 0.4$\,Hz, $t_s\leq 2$\,s,
 $P_\mathrm{p2p}\leq 1$\,kW); ``R$_{\mathrm{1Hz/s}}$'' = RoCoF under
-the relaxed Cat.~II / ENTSO-E envelope.}
+the ENTSO-E $1$\,Hz/s envelope; pass rate under Cat.~II $2$\,Hz/s is
+$\geq$~R$_{\mathrm{1Hz/s}}$ by monotonicity (also $100\%$ for C4).}
 \label{tab:mc-pass}
 \centering
 \renewcommand{\arraystretch}{1.06}
