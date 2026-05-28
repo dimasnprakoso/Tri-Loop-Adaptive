@@ -33,7 +33,7 @@ under Weak Tropical Grids}
         Dimas~Fajar~Uman~Putra,
         Ananthyo~Whisnu~Wardhana,
         and~Basuki~Winarno%
-\thanks{Manuscript submitted for review.}%
+\thanks{Manuscript submitted on May~29, 2026. This work was supported by the Direktorat Penelitian dan Pengabdian kepada Masyarakat (DPRM) Institut Teknologi Sepuluh Nopember under the PKAPT~2026 research grant. The authors declare no conflict of interest related to this work.}%
 \thanks{D.~N.~Prakoso, A.~Soeprijanto, D.~F.~U.~Putra, and A.~W.~Wardhana are with the Department of Electrical Engineering, Institut Teknologi Sepuluh Nopember (ITS), Surabaya 60111, Indonesia (e-mail: 7022251005@student.its.ac.id; adisup@ee.its.ac.id; dimasfup@its.ac.id; 6022251032@student.its.ac.id).}%
 \thanks{B.~Winarno is with Politeknik Negeri Madiun, Indonesia (e-mail: basuki@pnm.ac.id).}%
 \thanks{Corresponding author: A.~Soeprijanto (e-mail: adisup@ee.its.ac.id).}%
@@ -437,7 +437,14 @@ P_\mathrm{ref}=P_\mathrm{mppt}+P_\mathrm{vic}+
 \label{eq:Pref}
 \end{equation}
 with $P_\mathrm{ref}$ saturated at $\pm 1.5\,P_\mathrm{rated}$ to
-match the converter's transient overload rating.
+match the converter's transient overload rating. Design parameters
+take the values $H_\mathrm{min}=\SI{1}{\second}$,
+$H_\mathrm{max}=\SI{5}{\second}$, $D_\mathrm{min}=12$,
+$D_\mathrm{max}=50$, $\gamma_J=\delta_D=1$, $k_\alpha=4$,
+$k_\alpha^{\dot\omega}=1$, $\beta_\mathrm{max}=0.7$, and
+$\bar{\mathrm{SOC}}=(SOC_\mathrm{min}+SOC_\mathrm{max})/2=0.55$;
+full parameter set in
+\texttt{julia/src/models/params.jl} of the released code.
 
 \subsection{Theoretical Properties}\label{sec:properties}
 \paragraph*{Boundedness} For
@@ -822,7 +829,7 @@ $f_\mathrm{vic}=1/(2\pi T_\mathrm{filter})=3.18$\,Hz and \emph{above}
 by the BESS supervisor sampling rate $1/T_\mathrm{sup}=1\,$kHz. The
 limit cycle is thus an \emph{interaction} between the dead-band of
 the BESS supervisor and the saturated $P_\mathrm{vic}$, mediated by
-the measurement-filter pole at $1/T_\mathrm{meas}=7.96$\,Hz.
+the measurement-filter pole at $f_\mathrm{meas}=1/(2\pi T_\mathrm{meas})=7.96$\,Hz.
 \item C4 attenuates this oscillation by more than three orders of
 magnitude (peak amplitude $0.0002\,$kW vs. $0.7$--$0.9\,$kW in
 C1--C3); the residual spectrum is dominated by a sub-Hz drift at
