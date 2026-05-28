@@ -31,8 +31,8 @@ authors:
   - family-names: Winarno
     given-names: Basuki
     affiliation: "Politeknik Negeri Madiun, East Java, Indonesia"
-repository-code: "https://github.com/Power-Simulations/pemodelan-paper1"
-url: "https://github.com/Power-Simulations/pemodelan-paper1"
+repository-code: "https://github.com/dimasnprakoso/Tri-Loop-Adaptive"
+url: "https://github.com/dimasnprakoso/Tri-Loop-Adaptive"
 license: MIT
 version: "1.0.0"
 date-released: "2026-05-28"

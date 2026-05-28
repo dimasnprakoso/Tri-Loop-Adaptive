@@ -200,7 +200,7 @@ cp results/figures/fig_*.pdf papers/q1_tri_loop/figures/
 
 Draft ini dihasilkan otomatis dari pipeline simulasi. Semua angka,
 tabel, dan klaim metrik **harus** dapat di-trace ke commit
-[8e22249](https://github.com/Power-Simulations/pemodelan/commit/8e22249)
+[8e22249](https://github.com/dimasnprakoso/Tri-Loop-Adaptive/commit/8e22249)
 atau commit yang lebih baru. Jika ada update parameter atau bug-fix di
 modul utama, regenerate konten dinamis (lihat di atas) sebelum
 mengubah naskah.
