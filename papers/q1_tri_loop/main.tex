@@ -815,6 +815,11 @@ discriminate among the schemes; the discriminator is the nonlinear
 interaction near and across the dead-band, treated formally in
 Section~\ref{sec:discussion}.
 
+A frozen-time off-equilibrium linearization (Fig.~\ref{fig:eigen_offeq},
+Section~\ref{sec:discussion-lc}) addresses this restriction by
+evaluating the Jacobian at sustained-fault operating points where the
+adaptive gains have departed $(H_\mathrm{min},D_\mathrm{min})$.
+
 \subsection{Madiun Case Study}\label{sec:results-madiun}
 Three representative days of 2025 are simulated as scenario S6: the
 median-energy clear day (2025-08-01, 5.68\,kWh/m\textsuperscript{2}),
@@ -995,8 +1000,9 @@ against an independent MATLAB port on S1/S3 (residuals at the
 unit-of-least-precision floor; see supplementary material), ruling
 out implementation bugs. Validation of the averaging
 \emph{assumptions} (ideal current-loop tracking, constant
-$V_\mathrm{DC}$, no switching) against a Simscape EMT model is left
-as a revision following \cite{wang2022describing,kim2025selfexcited}.
+$V_\mathrm{DC}$, no switching) against a Simscape EMT model, and
+hardware-in-the-loop emulation on a real-time target, are scoped as
+revision work following \cite{wang2022describing,kim2025selfexcited}.
 The 45--60\,Hz limit-cycle band sits close to 50\,Hz, but the
 proximity is coincidental rather than aliasing-driven: the control
 step ($50\,\mu$s) and log Nyquist ($500$\,Hz) lie far above the
