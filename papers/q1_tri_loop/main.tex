@@ -212,11 +212,10 @@ installation in Winongo, Kota Madiun, East Java, Indonesia
 (Fig.~\ref{fig:plant_real}; $7.613^\circ$S, $111.512^\circ$E),
 comprising $228$ Chint Astro~5 Semi $550\,$Wp PV modules, a
 50\,kWh / 60\,kW lithium-ion BESS, and a single three-phase
-voltage-source inverter behind an LCL filter. The PV array is
-represented in the simulation by a single-diode aggregate equivalent
-calibrated to the same $125\,$kWp STC rating; this installation
-also drives the Madiun case study in
-Section~\ref{sec:results-madiun}. The $125\,$kW rating places the
+voltage-source inverter behind an LCL filter. The PV array is represented in the
+simulation by a reduced-order single-diode aggregate matched to the
+plant MPP at STC; this installation also drives the Madiun case study
+in Section~\ref{sec:results-madiun}. The $125\,$kW rating places the
 plant within IEEE~Std~1547-2018 Category~I (devices $\leq$1\,MVA),
 and the $P_\mathrm{bess}/P_\mathrm{pv}=0.48$ ratio with $\sim$50\,min
 of energy duration is consistent with sizing guidelines reported for
@@ -1001,7 +1000,9 @@ piecewise-smooth property of $P_\mathrm{ref}$ in
 
 \paragraph*{Limitations}
 \textit{Average modelling.} The model omits PWM ripple, harmonics, and
-converter dead-time. The averaged-model code is verified bit-for-bit
+converter dead-time, and represents the PV array as a single-diode
+MPP-fit aggregate (module-level mismatch and partial shading
+abstracted). The averaged-model code is verified bit-for-bit
 against an independent MATLAB port on S1/S3 (residuals at the
 unit-of-least-precision floor; see supplementary material), ruling
 out implementation bugs. Validation of the averaging
