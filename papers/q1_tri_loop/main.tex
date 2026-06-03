@@ -170,8 +170,9 @@ battery degradation cost.
 \begin{enumerate}[leftmargin=*]
 \item We \emph{quantitatively document} the limit cycle across all three
 adaptive-VIC families through a controlled five-scheme study,
-including a previously unreported empirical equivalence between the
-fuzzy and tanh-smooth schemes.
+including an empirical equivalence between the fuzzy and tanh-smooth
+schemes that, to our knowledge, is not previously documented in this
+PV-BESS-VIC context.
 \item We propose a \emph{tri-loop adaptive co-design} that
 simultaneously schedules
 $H(\dot\omega), D(\Delta\omega), \alpha(\Delta\omega,\dot\omega)$,
@@ -606,7 +607,7 @@ S1 & $+5\%$ load step                                            & 4.0 & 5\,s \\
 S2 & $G$: 1000$\to$300$\to$1000\,W/m\textsuperscript{2} ramp     & 4.0 & 10\,s \\
 S3 & gen-loss equivalent $+10\%$ step                            & 2.0 & 8\,s \\
 S4 & high-IBR ($H_\mathrm{sys}=0.5\,$s) + S3                     & 0.5 & 8\,s \\
-S5 & weak grid ($H_\mathrm{sys}=D_\mathrm{sys}=1$) + S1          & 1.0 & 8\,s \\
+S5 & low-inertia/low-damping weak-grid proxy ($H_\mathrm{sys}=D_\mathrm{sys}=1$) + S1 & 1.0 & 8\,s \\
 S6 & Madiun real-day (NASA POWER hourly, 24\,h compressed)       & 2.0 & 240\,s \\
 \bottomrule
 \end{tabular}
