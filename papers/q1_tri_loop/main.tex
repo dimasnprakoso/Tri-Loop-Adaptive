@@ -226,7 +226,7 @@ because the studied phenomena (RoCoF, frequency nadir, limit cycle)
 are dominated by it
 \cite{rocabert2012control,khan2024gridforming}.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \begin{subfigure}[t]{0.46\columnwidth}
 \centering
@@ -248,29 +248,19 @@ parameters in this paper mirror.}
 Fig.~\ref{fig:plant_install} captures the array during commissioning
 and Fig.~\ref{fig:plant_overview} the completed system under tropical
 clear-sky irradiance. The plant sits at the end of a medium-voltage
-distribution feeder serving the mixed light-industrial and
-commercial load typical of Indonesian secondary cities, where the
-Java--Bali bulk system provides only modest residual rotational
-support during daytime PV peak. Three site characteristics shape the
-operating envelope under which the controller must perform: first,
-frequent equatorial cumulus events produce sub-minute irradiance
-ramps that load the BESS share $\beta$ in seconds-scale bursts and,
-in the absence of supervisory coordination, alias with the dead-band
-of the adaptive law; second, the daytime short-circuit ratio at the
-point of connection rarely exceeds 2, placing the plant near the
+distribution feeder typical of Indonesian secondary cities, where
+three site characteristics shape the operating envelope: frequent
+equatorial cumulus events produce sub-minute irradiance ramps that
+load the BESS share $\beta$ in seconds-scale bursts; the daytime
+short-circuit ratio rarely exceeds 2, placing the plant near the
 marginal-stability boundary of grid-following inverter PLLs
 \cite{eckel2024classification,hatziargyriou2021classification}; and
-third, the diurnal load--temperature coupling characteristic of an
-Indonesian tropical grid produces a multi-scale forcing---fast cloud
-transients superposed on a slow daily envelope---that conventional
-gain-scheduled VIC schemes do not anticipate. These conditions
-translate directly into the canonical scenarios of
+the diurnal load--temperature coupling produces a multi-scale
+forcing that conventional gain-scheduled VIC does not anticipate.
+These conditions translate directly into the canonical scenarios of
 Section~\ref{sec:setup}---S2 (cloud passing), S5 (weak grid), and
-S6 (24-h Madiun day)---and the limit-cycle phenomenon identified in
-this paper emerges precisely where they intersect: not as a
-theoretical corner case but as a quantitative design constraint with
-measurable consequences in BESS cycling and battery-degradation
-cost.
+S6 (24-h Madiun day)---and the limit-cycle phenomenon identified
+in this paper emerges precisely where they intersect.
 
 \subsection{Average Model and Modelling Decisions}
 Switching is abstracted at the carrier-frequency level---the inverter
