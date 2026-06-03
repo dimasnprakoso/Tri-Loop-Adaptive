@@ -13,9 +13,13 @@
     a::Float64              = 1.3          # diode ideality factor
     Vt_stc::Float64         = 0.02585      # kT/q at 25°C
     Ns::Float64             = 60.0         # cells in series per module
-    # Calibrated 2026-05-01: 38 strings × 10 modules ≈ 125 kW @ STC
-    Np_strings::Float64     = 38.0         # parallel strings
-    Ns_modules::Float64     = 10.0         # modules in series per string
+    # Single-diode equivalent of the real Winongo plant
+    # (228 × Chint Astro 5 Semi 550 Wp = 125.4 kWp). Topology
+    # 38 parallel × 10 series chosen as a smooth-coefficient aggregate
+    # that reproduces the plant-level MPP at STC; cell-level layout of
+    # the as-built array may differ.
+    Np_strings::Float64     = 38.0         # parallel strings (model)
+    Ns_modules::Float64     = 10.0         # modules in series (model)
     G_stc::Float64          = 1000.0       # W/m2
     T_stc::Float64          = 25.0         # °C
     Ki::Float64             = 0.0032       # %/°C temp coeff Isc
