@@ -240,21 +240,37 @@ are dominated by it
 \caption{Completed rooftop array}
 \label{fig:plant_overview}
 \end{subfigure}
-\caption{The 125\,kWp Winongo PV--BESS installation, Kota Madiun,
-Indonesia.}
+\caption{The 125\,kWp PV plant in Madiun, Indonesia, that the model
+parameters in this paper mirror.}
 \label{fig:plant_real}
 \end{figure}
 
 Fig.~\ref{fig:plant_install} captures the array during commissioning
 and Fig.~\ref{fig:plant_overview} the completed system under tropical
-clear-sky irradiance. The distribution-feeder location, intermittent
-cloud cover, low residual rotational inertia, and diurnal
-load--temperature coupling that characterise this site motivate the
-canonical disturbance set in Section~\ref{sec:setup}---in particular
-S2 (cloud passing), S5 (weak grid), and S6 (24-h Madiun
-day)---and define the operating regime in which the limit-cycle
-phenomenon identified in this paper emerges as a quantitative
-design constraint.
+clear-sky irradiance. The plant sits at the end of a medium-voltage
+distribution feeder serving the mixed light-industrial and
+commercial load typical of Indonesian secondary cities, where the
+Java--Bali bulk system provides only modest residual rotational
+support during daytime PV peak. Three site characteristics shape the
+operating envelope under which the controller must perform: first,
+frequent equatorial cumulus events produce sub-minute irradiance
+ramps that load the BESS share $\beta$ in seconds-scale bursts and,
+in the absence of supervisory coordination, alias with the dead-band
+of the adaptive law; second, the daytime short-circuit ratio at the
+point of connection rarely exceeds 2, placing the plant near the
+marginal-stability boundary of grid-following inverter PLLs
+\cite{eckel2024classification,hatziargyriou2021classification}; and
+third, the diurnal load--temperature coupling characteristic of an
+Indonesian tropical grid produces a multi-scale forcing---fast cloud
+transients superposed on a slow daily envelope---that conventional
+gain-scheduled VIC schemes do not anticipate. These conditions
+translate directly into the canonical scenarios of
+Section~\ref{sec:setup}---S2 (cloud passing), S5 (weak grid), and
+S6 (24-h Madiun day)---and the limit-cycle phenomenon identified in
+this paper emerges precisely where they intersect: not as a
+theoretical corner case but as a quantitative design constraint with
+measurable consequences in BESS cycling and battery-degradation
+cost.
 
 \subsection{Average Model and Modelling Decisions}
 Switching is abstracted at the carrier-frequency level---the inverter
