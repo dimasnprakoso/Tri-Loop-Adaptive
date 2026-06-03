@@ -545,7 +545,10 @@ cancellation in linear control but operating on the nonlinear loop
 gain (see the spectral characterization in Section~\ref{sec:discussion-lc}).
 
 \begin{table}[t]
-\caption{The five control schemes evaluated.}
+\caption{The five control schemes evaluated. C1--C4 share identical
+$[H_\mathrm{min},H_\mathrm{max}]$, $[D_\mathrm{min},D_\mathrm{max}]$,
+and BESS rating, so performance differences reflect the gain schedule
+and coordination logic only.}
 \label{tab:schemes}
 \centering
 \renewcommand{\arraystretch}{1.05}
@@ -790,8 +793,11 @@ the minimum damping ratio across the same sweep.
 \centering
 \includegraphics[width=\columnwidth]{fig_eigen_locus}
 \caption{Eigenvalue locus on the $s$-plane for sweeps of
-$\dot\omega_\mathrm{ref}$, $k_\alpha$, $\beta_\mathrm{max}$,
-$H_\mathrm{max}$ (viridis: low$\to$high). All loci in the LHP.}
+$\dot\omega_\mathrm{ref}\!\in\![0.5,3]$\,Hz/s,
+$k_\alpha\!\in\![2,10]$,
+$\beta_\mathrm{max}\!\in\![0.1,1.0]$,
+$H_\mathrm{max}\!\in\![1,8]$\,s
+(viridis: low$\to$high). All loci in the LHP.}
 \label{fig:eigen_locus}
 \end{figure}
 
