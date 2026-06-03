@@ -14,7 +14,7 @@
     Vt_stc::Float64         = 0.02585      # kT/q at 25°C
     Ns::Float64             = 60.0         # cells in series per module
     # Single-diode equivalent of the real Winongo plant
-    # (228 × Chint Astro 5 Semi 550 Wp = 125.4 kWp). Topology
+    # (228 × Chint Astro 5 Semi 550 Wp; nominal 125 kWp). Topology
     # 38 parallel × 10 series chosen as a smooth-coefficient aggregate
     # that reproduces the plant-level MPP at STC; cell-level layout of
     # the as-built array may differ.
